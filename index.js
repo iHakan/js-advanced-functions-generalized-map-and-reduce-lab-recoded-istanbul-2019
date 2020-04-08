@@ -13,7 +13,7 @@ function reduce(arr,callback,startingPoint=null){
   //inside callback we will pass acc curr
   let value1=startingPoint;
   for(let element of arr){
-    value1=value1+element
+    value1=callback(element)
   }
   return value1;
 }
