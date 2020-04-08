@@ -8,3 +8,7 @@ function map(arr,callback){
   }
   return newArr;
 }
+
+function reduce(accumulator, currentValue,startingPoint=0){
+  
+}
