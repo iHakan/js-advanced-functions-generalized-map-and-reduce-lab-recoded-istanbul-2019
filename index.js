@@ -12,14 +12,16 @@ function map(arr,callback){
 function reduce(arr,callback,startingPoint=null){
   //inside callback we will pass acc curr
   let value1=startingPoint;
+  
   for(let element of arr){
     value1=value1+element
   }
+  
   for(let element of arr){
     if(element){
-      return true;
+      value1 = true;
     }else{
-      return false;
+      value1 = false;
     }
   }
   return value1;
