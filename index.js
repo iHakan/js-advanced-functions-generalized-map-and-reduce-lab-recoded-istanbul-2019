@@ -9,6 +9,11 @@ function map(arr,callback){
   return newArr;
 }
 
-function reduce(accumulator, currentValue,startingPoint=0){
-  
+function reduce(arr,callback,startingPoint=0){
+  //inside callback we will pass acc curr
+  let value1=0;
+  for(let element of arr){
+    value1=value1+element
+  }
+  return value1;
 }
