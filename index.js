@@ -14,7 +14,7 @@ function reduce(arr,callback,startingPoint=null){
   let value1=startingPoint;
   
   if(callback(true,true)==Boolean){
-     return true;
+     value1 = true;
   }
   for(let el of arr){
     value1=value1+el
