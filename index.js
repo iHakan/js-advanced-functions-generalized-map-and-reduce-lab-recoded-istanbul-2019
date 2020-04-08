@@ -11,7 +11,7 @@ function map(arr,callback){
 
 function reduce(arr,callback,startingPoint=""){
   //inside callback we will pass acc curr
-  let value1=startingPoint;
+  let value1=parseInt(startingPoint);
   for(let element of arr){
     value1=value1+element
   }
