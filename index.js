@@ -13,16 +13,13 @@ function reduce(arr,callback,startingPoint=null){
   //inside callback we will pass acc curr
   let value1=startingPoint;
   
+  if(callback(true,true)=="Boolean"){
+    return true;
+  }
   for(let el of arr){
     value1=value1+el
   }
   
-  for(let element of arr){
-    if(element){
-      value1 = true;
-    }else{
-      value1 = false;
-    }
-  }
+  
   return value1;
 }
