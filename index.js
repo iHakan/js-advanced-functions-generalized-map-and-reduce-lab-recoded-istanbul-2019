@@ -9,7 +9,7 @@ function map(arr,callback){
   return newArr;
 }
 
-function reduce(arr,callback,startingPoint=0){
+function reduce(arr,callback,startingPoint){
   //inside callback we will pass acc curr
   let value1=startingPoint;
   for(let element of arr){
