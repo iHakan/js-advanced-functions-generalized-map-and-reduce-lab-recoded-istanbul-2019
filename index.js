@@ -13,10 +13,6 @@ function reduce(arr,callback,startingPoint=null){
   //inside callback we will pass acc curr
   let value1=startingPoint;
   
-  for(let el of arr){
-    value1=value1+el
-  }
-  
   for(let element of arr){
     if(element){
       value1 = true;
@@ -24,5 +20,10 @@ function reduce(arr,callback,startingPoint=null){
       value1 = false;
     }
   }
+  for(let el of arr){
+    value1=value1+el
+  }
+  
+  
   return value1;
 }
