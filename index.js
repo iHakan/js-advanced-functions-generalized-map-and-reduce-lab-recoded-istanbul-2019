@@ -3,8 +3,8 @@
 function map(arr,callback){
   let newArr=[];
   
-  for(let i of arr){
-    newArr.push(callback(i))
+  for(let element of arr){
+    newArr.push(callback(element))
   }
   return newArr;
 }
